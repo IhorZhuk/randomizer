@@ -4,8 +4,6 @@ define(
 
   var HomeResults = Backbone.View.extend({
 
-    className: 'pill-result',
-
     template: _.template(htmlTemplate),
 
     initialize: function(ops) {

@@ -43,9 +43,7 @@ define(
 
     onCollectionsReset: function() {
       this.toggleButtonState();
-      if ( typeof this.resultsView != 'undefined' ) {
-        this.resultsView.remove();
-      }
+      this.ui.$results.html('');
     },
 
     toggleButtonState: function() {
@@ -64,8 +62,8 @@ define(
       this.set1.remove(set1RandomModel);
       this.set2.remove(set2RandomModel);
 
-      this.resultsView = new ResultsView({item1:set1RandomModel, item2: set2RandomModel});
-      this.ui.$results.append(this.resultsView.render());
+      var view = new ResultsView({item1:set1RandomModel, item2: set2RandomModel});
+      this.ui.$results.append(view.render());
     },
 
     resetCollections: function(e) {
