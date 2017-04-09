@@ -1,0 +1,92 @@
+/* overwrite framework */
+.button:focus {
+  background-color: #9b4dca;
+  border-color: #9b4dca;
+}
+
+.button.button-clear:focus {
+  color: #9b4dca;
+}
+
+.button.button-outline:focus {
+  color: #9b4dca;
+  border-color: #9b4dca;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+@media(max-width: 40rem) {
+  .row .column.no-offset-xs {
+    margin-left: 0 !important;
+  }
+}
+
+/* helpers */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+/* custom rules */
+.header {
+  padding: 10px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.pill {
+  display: inline-block;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.has-red-pills .pill,
+.pill.is-red {
+  background-color: #ff4b73;
+}
+
+.has-blue-pills .pill,
+.pill.is-blue {
+  background-color: #6363ff;
+}
+
+.home-results {
+  margin-top: 20px;
+}
+
+.pill-result-col {
+  float: left;
+  width: 50%;
+}
+
+.pill-result-col .pill {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.pill-result-col .is-red {
+  border-radius: 5px 0 0 5px;
+}
+
+.pill-result-col .is-blue {
+  border-radius: 0 5px 5px 0;
+}
+
+.match-wrapper {
+  margin: 20px 0;
+}
